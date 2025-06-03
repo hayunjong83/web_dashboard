@@ -8,7 +8,7 @@ st.set_page_config(layout="wide")
 
 @st.cache_data
 def load_dataset2():
-  path = "./data/data2.csv"
+  path = "./example_data/ex2.csv"
   df = pd.read_csv(path)
   df = df.rename(columns={
       "자치구별(2)": "자치구", 
